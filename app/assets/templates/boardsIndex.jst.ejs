@@ -1,0 +1,14 @@
+<% boards.each(function (board) { %>
+  <li class="boards-index-item">
+    <a href="<%= "#/boards/" + board.id %>">
+      <%= board.escape("title") %>
+    </a>
+  </li>
+<% }) %>
+
+<li class="boards-index-item-new">
+  <a class="new-board"
+     href="#/boards/new">
+    Create a new board!
+  </a>
+</li>

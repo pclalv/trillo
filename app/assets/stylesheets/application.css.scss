@@ -1,0 +1,125 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery.ui.all
+ *= require_tree .
+ */
+
+html, body, div, nav, h1, h2, h3, p, ul, li, a, form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+  background: transparent;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.cover {
+  z-index: 50;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+}
+
+.highlight {
+  background: #ffff99;
+  transition: background-color 1000ms;
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  margin: -75px 0 auto 0;
+  z-index: 100;
+  width: 475px;
+  height: 150px;
+  display: block;
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+}
+
+.modal h3, p {
+  margin: 20px;
+}
+
+nav {
+  padding: 10px 10px 0 10px;
+}
+
+.navbar-brand {
+  float: left;
+}
+
+.navbar-right {
+  float: right;
+}
+
+.navbar-right > li {
+  float: left
+}
+
+.board-index-item {
+
+}
+
+.board-list {
+  float: left;
+  background: #00cc78;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #00fff8;
+  border-radius: 5px;
+}
+
+.lists-list {
+
+}
+
+.delete-card {
+  display: none;
+}
+
+.cards-list-item, .cards-list-item-new {
+  background: #eee;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cards-list-item:hover .delete-card {
+  display: block;
+}
